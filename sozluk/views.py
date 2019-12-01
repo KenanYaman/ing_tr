@@ -8,10 +8,17 @@ def anasayfa(request,*args, **kwargs):
     context = {
         'eng_tr': obj
     }
-    return render(request, "anasayfa.html", context)
+    return render(request, "anasayfa.html", context,  {'nbar': 'home'})
 
 
 def hakkinda(request,*args, **kwargs):
     my_context = {
     }
-    return render(request, "hakkinda.html", my_context)
+    return render(request, "hakkinda.html", my_context,{'nbar': 'hakkinda'})
+
+
+def zamanlar(request,*args, **kwargs):
+    my_context = {
+    }
+    return render(request, "zamanlar.html", my_context,{'nbar': 'zamanlar'})
+
